@@ -9,6 +9,8 @@ import HomePage from './Pages/HomePage.jsx';
 import AboutPage from './Pages/AboutPage.jsx';
 import ServicePage from './Pages/ServicePage.jsx';
 import ContactPage from './Pages/ContactPage.jsx';
+import NavBarExamples from './Components/NavBar/NavBarExamples.jsx';
+import CarouselsExamples from './Components/Carousels/CarouselsExamples.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
         path: "ContactPage",
         element: <ContactPage />
       
+      },
+      {
+        path: "NavBarExamples",
+        element: <NavBarExamples />
+      },
+      {
+        path: "CarouselsExamples",
+        element: <CarouselsExamples />
       },
     ]
   },

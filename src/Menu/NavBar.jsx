@@ -17,6 +17,8 @@ export default function CustomNavbar () {
                     <Nav.Link href="AboutPage" active={Boolean(useMatch('AboutPage'))}>About</Nav.Link>
                     <Nav.Link href="ServicePage" active={Boolean(useMatch('ServicePage'))}>Service</Nav.Link>
                     <Nav.Link href="ContactPage" active={Boolean(useMatch('ContactPage'))}>Contact</Nav.Link>
+                    <Nav.Link href="NavBarExamples" active={Boolean(useMatch('NavBarExamples'))}>NavBar Examples</Nav.Link>
+                    <Nav.Link href="CarouselsExamples" active={Boolean(useMatch('CarouselsExamples'))}>Carousels Examples</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
