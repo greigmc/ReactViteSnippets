@@ -25,6 +25,7 @@ body {
 
 .container-fluid {
   --bs-gutter-x: 0;
+  overflow: hidden;
 }
 
 .form-control {

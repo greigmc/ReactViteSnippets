@@ -7,7 +7,7 @@ export default function CardsExample() {
   return (
     <Container>
     <section>
-        <h1>Cards</h1>
+        <h1>Cards Examples</h1>
         <hr></hr>
         <h3>Basic Example</h3>
         <p>Bootstrap cards provide a flexible and extensible content container with multiple variants and options.</p>

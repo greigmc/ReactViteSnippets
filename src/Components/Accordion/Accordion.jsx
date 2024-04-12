@@ -5,7 +5,7 @@ export default function AccordionExample() {
   return (
     <Container>
     <section>
-        <h1>Accordion</h1>
+        <h1>Accordion Examples</h1>
         <hr></hr>
         <h3>Basic Example</h3>
         <p>Click the accordions below to expand/collapse the accordion content.</p>

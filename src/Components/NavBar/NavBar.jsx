@@ -18,7 +18,7 @@ export default function NavBarExamples() {
     <h1>NavBar Examples</h1>
     <hr></hr>
      <h3 className='my-5'>Color schemes</h3>
-     <p>Theming the navbar using classes and background-color utilities. </p>
+     <h4>Theming the navbar using classes and background-color utilities. </h4>
      <hr></hr>
      <Navbar bg="dark" data-bs-theme="dark">
         <Container>
@@ -56,7 +56,7 @@ export default function NavBarExamples() {
 
      <hr></hr>
      <h3 className='my-5'>Responsive navigation header</h3>
-     <p>Navbar menu with dropdown, disabled Href and form</p>
+     <h4>Navbar menu with dropdown, disabled Href and form</h4>
      <hr></hr>
     
     <Navbar expand="sm" className="bg-body-primary px-4" bg="primary" data-bs-theme="dark">
@@ -97,7 +97,7 @@ export default function NavBarExamples() {
   </Navbar>
   <hr></hr>
   <h3 id='home' className='my-5'>Responsive Scrolling NavBar</h3>
-     <p>navbarScroll prop in a to enable vertical scrolling within the toggleable contents of a collapsed navbar.</p>
+     <h4>navbarScroll prop in a to enable vertical scrolling within the toggleable contents of a collapsed navbar.</h4>
      <hr></hr>
      <Navbar expand="lg" className="bg-body-primary px-4" bg="primary" data-bs-theme="dark" id='home'>
         <Navbar.Brand href="#">Top Of Page</Navbar.Brand>
@@ -140,24 +140,24 @@ export default function NavBarExamples() {
     <h1 className='my-0'>&nbsp;</h1>
     <h1 className='my-5'>Section One</h1>
     <Row className='my-5'>
-        <Col lg={4} md={4} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
-        <Col lg={4} md={4} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
+        <Col lg={6} md={6} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
+        <Col lg={6} md={6} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
     </Row>
       <Row className='my-5'>
-        <Col lg={4} md={4} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
-        <Col lg={4} md={4} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
+        <Col lg={6} md={6} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
+        <Col lg={6} md={6} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
       </Row>
     </section>
    <section id='scrollOne' className='my-5'>
    <h1 className='my-5'>&nbsp;</h1>
    <h1 className='my-4'>Section Two </h1>
     <Row className='my-5'>
-         <Col lg={4} md={4} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
-        <Col lg={4} md={4} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
+         <Col lg={6} md={6} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
+        <Col lg={6} md={6} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
       </Row>
       <Row className='my-5'>
-    <Col lg={4} md={4} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
-        <Col lg={4} md={4} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
+    <Col lg={6} md={6} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
+        <Col lg={6} md={6} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
     </Row>
     </section>
  </section>
