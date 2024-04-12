@@ -8,16 +8,17 @@ import {
     Col,
     Row,
   } from 'react-bootstrap';
-  import imageOne from './images/imageOne.jpg';
+  import imageOne from './../../assets/images/imageOne.jpg';
 
 
 export default function NavBarExamples() {
   return (
-    <div className='container'>
+  <Container>
+    <section className='container'>
     <h1>NavBar Examples</h1>
     <hr></hr>
      <h3 className='my-5'>Color schemes</h3>
-     <h4>Theming the navbar using classes and background-color utilities. </h4>
+     <p>Theming the navbar using classes and background-color utilities. </p>
      <hr></hr>
      <Navbar bg="dark" data-bs-theme="dark">
         <Container>
@@ -55,11 +56,10 @@ export default function NavBarExamples() {
 
      <hr></hr>
      <h3 className='my-5'>Responsive navigation header</h3>
-     <h4>Navbar menu with dropdown, disabled Href and form</h4>
+     <p>Navbar menu with dropdown, disabled Href and form</p>
      <hr></hr>
-
-    <Navbar expand="sm" className="bg-body-primary" bg="primary" data-bs-theme="dark">
-    <Container>
+    
+    <Navbar expand="sm" className="bg-body-primary px-4" bg="primary" data-bs-theme="dark">
       <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
@@ -94,14 +94,12 @@ export default function NavBarExamples() {
           <Button variant="light">Search</Button>
         </Form>
       </Navbar.Collapse>
-    </Container>
   </Navbar>
   <hr></hr>
   <h3 id='home' className='my-5'>Responsive Scrolling NavBar</h3>
-     <h4>navbarScroll prop in a to enable vertical scrolling within the toggleable contents of a collapsed navbar.</h4>
+     <p>navbarScroll prop in a to enable vertical scrolling within the toggleable contents of a collapsed navbar.</p>
      <hr></hr>
-     <Navbar expand="lg" className="bg-body-tertiary" id='home'>
-      <Container fluid>
+     <Navbar expand="lg" className="bg-body-primary px-4" bg="primary" data-bs-theme="dark" id='home'>
         <Navbar.Brand href="#">Top Of Page</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -128,41 +126,41 @@ export default function NavBarExamples() {
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
-            <Form.Control
+            {/* <Form.Control
               type="search"
               placeholder="Search"
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-success">Search</Button> */}
           </Form>
         </Navbar.Collapse>
-      </Container>
     </Navbar>
     <section id='scroll' className='my-5'> &nbsp;
     <h1 className='my-0'>&nbsp;</h1>
     <h1 className='my-5'>Section One</h1>
     <Row className='my-5'>
-        <Col sm={6}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
-        <Col sm={6}><img src={imageOne} alt='image' height={200} /> </Col>
-      </Row>
+        <Col lg={4} md={4} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
+        <Col lg={4} md={4} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
+    </Row>
       <Row className='my-5'>
-        <Col sm={6}><img src={imageOne} alt='image' height={200} /> </Col>
-        <Col sm={6}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
+        <Col lg={4} md={4} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
+        <Col lg={4} md={4} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
       </Row>
     </section>
    <section id='scrollOne' className='my-5'>
    <h1 className='my-5'>&nbsp;</h1>
    <h1 className='my-4'>Section Two </h1>
     <Row className='my-5'>
-         <Col sm={6}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
-        <Col sm={6}><img src={imageOne} alt='image' height={200} /> </Col>
+         <Col lg={4} md={4} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
+        <Col lg={4} md={4} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
       </Row>
       <Row className='my-5'>
-    <Col sm={6}><img src={imageOne} alt='image' height={200} /> </Col>
-        <Col sm={6}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
+    <Col lg={4} md={4} sm={12}><img src={imageOne} alt='image' height={200} /> </Col>
+        <Col lg={4} md={4} sm={12}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Col>
     </Row>
     </section>
- </div>
+ </section>
+ </Container>
   )
 }

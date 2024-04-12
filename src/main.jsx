@@ -4,15 +4,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './Styles.css';
 import ErrorPage from './Pages/ErrorPage';
-import CustomNavbar from './Menu/NavBar.jsx';
-import HomePage from './Pages/HomePage.jsx';
-import AboutPage from './Pages/AboutPage.jsx';
-import ServicePage from './Pages/ServicePage.jsx';
-import ContactPage from './Pages/ContactPage.jsx';
-import NavBarExamples from './Components/NavBar/NavBarExamples.jsx';
-import CarouselsExamples from './Components/Carousels/CarouselsExamples.jsx';
+import CustomNavbar from './Menu/NavBar';
+import HomePage from './Pages/HomePage';
+import AboutPage from './Pages/AboutPage';
+import ServicePage from './Pages/ServicePage';
+import ContactPage from './Pages/ContactPage';
+import NavBarExamples from './Components/NavBar/NavBar';
+import CarouselsExamples from './Components/Carousels/Carousels';
+import CardsExample from './Components/Cards/Cards';
+import AccordionExample from './Components/Accordion/Accordion';
+import ButtonsExample from './Components/Buttons/Buttons';
+import GridExample from './Components/Grid/Grid';
+// import ButtonsExample from './Components/Buttons/Buttons';
+// import App from './App.jsx';
 
 const router = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: <App />
+  // },
   {
     path: "/",
     element:  <CustomNavbar />,
@@ -40,13 +50,29 @@ const router = createBrowserRouter([
       
       },
       {
-        path: "NavBarExamples",
+        path: "NavBar",
         element: <NavBarExamples />
       },
       {
-        path: "CarouselsExamples",
+        path: "Carousels",
         element: <CarouselsExamples />
       },
+      {
+        path: "Cards",
+        element: <CardsExample />
+      },
+      {
+        path: "Accordion",
+        element: <AccordionExample />
+      },
+      {
+        path: "Buttons",
+        element: <ButtonsExample />
+      },
+      {
+        path: "Grid",
+        element: <GridExample />
+      }
     ]
   },
 ]);
