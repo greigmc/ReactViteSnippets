@@ -7,11 +7,11 @@ export default function CustomNavbar () {
         <div className='container-fluid'>
         <Navbar bg="dark" variant="dark" expand="sm" sticky="top" className='NavBar'>
             <Container>
-                <Navbar.Brand href="Homepage">Logo</Navbar.Brand>
+                <Navbar.Brand href="/components/">Logo</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link href="Homepage" active={Boolean(useMatch('HomePage'))}>Home</Nav.Link>
+                    <Nav.Link href="/components/" active={Boolean(useMatch('/components/'))}>Home</Nav.Link>
                     {/* <Nav.Link href="Carousels" active={Boolean(useMatch('Carousels'))}>Carousels</Nav.Link>
                     <Nav.Link href="NavBar" active={Boolean(useMatch('NavBar'))}>NavBars</Nav.Link>
                     <Nav.Link href="Cards" active={Boolean(useMatch('Cards'))}>Cards</Nav.Link>

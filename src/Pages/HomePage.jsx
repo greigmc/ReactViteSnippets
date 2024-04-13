@@ -83,7 +83,7 @@ export default function HomePage() {
           {/* Card Two */}
           <Col lg={4} md={4} sm={12}>
           <Card>
-              <Card.Img variant="top" src={imageOne} />
+              <Card.Img variant="top" src={imageTwo} />
               <Card.Header as="h5">Featured</Card.Header>
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -111,7 +111,7 @@ export default function HomePage() {
           {/* Card Three */}
           <Col lg={4} md={4} sm={12}>
           <Card>
-              <Card.Img variant="top" src={imageOne} />
+              <Card.Img variant="top" src={imageThree} />
               <Card.Header as="h5">Featured</Card.Header>
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>

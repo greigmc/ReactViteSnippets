@@ -15,22 +15,19 @@ import CardsExample from './Components/Cards/Cards';
 import AccordionExample from './Components/Accordion/Accordion';
 import ButtonsExample from './Components/Buttons/Buttons';
 import GridExample from './Components/Grid/Grid';
+import Footer from './Components/Footer/Footer';
 // import ButtonsExample from './Components/Buttons/Buttons';
 // import App from './App.jsx';
 
+// const router = createBrowserRouter (Routes, { basename: "/components/" })([
+
 const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <App />
-  // },
   {
-    path: "/",
     element:  <CustomNavbar />,
-    // element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "HomePage",
+        path: "/",
         element: <HomePage />
     
       },
@@ -75,12 +72,16 @@ const router = createBrowserRouter([
       }
     ]
   },
-]);
+],
+{
+  basename: '/components/'
+});
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>,
 )
