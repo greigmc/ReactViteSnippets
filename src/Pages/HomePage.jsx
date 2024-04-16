@@ -1,4 +1,4 @@
-import { Carousel, Card, ListGroup, Accordion, Navbar, Nav, Container, Row, Col, Button } from 'react-bootstrap';
+import { Carousel, Card, ListGroup, Accordion, Navbar, Nav, Container, Row, Col, Button, Form } from 'react-bootstrap';
 import imageOne from './../assets/images/imageOne.jpg';
 import imageTwo from './../assets/images/imageTwo.jpg';
 import imageThree from './../assets/images/imageThree.jpg';
@@ -32,7 +32,6 @@ export default function HomePage() {
                     <h3>Second slide label</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <Button href='Carousels' variant="light" className='mb-5'>View Carousels</Button>{' '}
-                    <h3>First slide label</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -185,6 +184,35 @@ export default function HomePage() {
       </Row>
     </Container>
 
+        {/* Form */}
+    <Container className='my-4'>
+    <h1>Form Example</h1>
+        <hr></hr>
+      <Row className="my-4 text-start bg-primary text-white p-4">
+        <Col lg={12} md={12} sm={12}>
+        <Form method='post' noValidate validated="true">
+                <Form.Group className="mb-3" controlId="formBasicEmail" required>
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" placeholder="Enter email" />
+                    {/* <Form.Text className="text-muted">
+                    Well never share your email with anyone else.
+                    </Form.Text> */}
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                    <Form.Check type="checkbox" label="Check me out" />
+                </Form.Group>
+                <Button variant="light" type="submit" href='Forms'>
+                    Submit
+                </Button>
+                </Form>
+      </Col>
+      </Row>
+    </Container>
+
     {/* Navbar */}
     <Container className='my-4'>
     <h1>Navbar Example</h1>
@@ -228,14 +256,14 @@ export default function HomePage() {
      <Container className='my-4'>
        <h1>Button Examples</h1>
         <hr></hr>
-          <Button href="Buttons" variant="outline-primary">Primary</Button>{' '}
-          <Button href="Buttons" variant="outline-secondary">Secondary</Button>{' '}
-          <Button href="Buttons" variant="outline-success">Success</Button>{' '}
-          <Button href="Buttons" variant="outline-warning">Warning</Button>{' '}
-          <Button href="Buttons" variant="outline-danger">Danger</Button>{' '}
-          <Button href="Buttons" variant="outline-info">Info</Button>{' '}
+          <Button href="Buttons" variant="outline-primary mb-3">Primary</Button>{' '}
+          <Button href="Buttons" variant="outline-secondary mb-3">Secondary</Button>{' '}
+          <Button href="Buttons" variant="outline-success mb-3">Success</Button>{' '}
+          <Button href="Buttons" variant="outline-warning mb-3">Warning</Button>{' '}
+          <Button href="Buttons" variant="outline-danger mb-3">Danger</Button>{' '}
+          <Button href="Buttons" variant="outline-info mb-3">Info</Button>{' '}
           {/* <Button variant="outline-light" data-bs-theme="dark">Light</Button>{' '} */}
-          <Button variant="outline-dark">Dark</Button>
+          <Button variant="outline-dark mb-3">Dark</Button>
       </Container>
 
     </section>

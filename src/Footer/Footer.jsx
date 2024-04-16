@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <footer className="mt-5">
+    <footer className="mt-5 bottom-0 w-100">
     <div className="container-fluid text-center text-md-left mt-5 pt-5  bg-dark text-white mt-auto">
         <div className="row">
             <div className="col-md-12 mt-md-0 mt-3">

@@ -31,35 +31,35 @@ export default function ButtonsExample() {
 
 
   return (
-  <Container>
+  <Container className='mt-4'>
     <section>
      <h1>Button Examples</h1>
      <hr></hr>
      <h3>Uncontrolled Carousel</h3>
      <p>Use any of the available button style types to quickly create a styled button.</p>
      <hr></hr>
-     <Button variant="primary">Primary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="success">Success</Button>{' '}
-      <Button variant="warning">Warning</Button>{' '}
-      <Button variant="danger">Danger</Button>{' '}
-      <Button variant="info">Info</Button>{' '}
-      <Button variant="light">Light</Button>{' '}
-      <Button variant="dark">Dark</Button>
-      <Button variant="link">Link</Button>
+     <Button variant="primary" className='mb-3'>Primary</Button>{' '}
+      <Button variant="secondary" className='mb-3' >Secondary</Button>{' '}
+      <Button variant="success" className='mb-3'>Success</Button>{' '}
+      <Button variant="warning" className='mb-3'>Warning</Button>{' '}
+      <Button variant="danger" className='mb-3'>Danger</Button>{' '}
+      <Button variant="info" className='mb-3'>Info</Button>{' '}
+      <Button variant="light" className='mb-3'>Light</Button>{' '}
+      <Button variant="dark" className='mb-3'>Dark</Button>
+      <Button variant="link" className='mb-3'>Link</Button>
 
     <hr></hr>
      <h3>Outline buttons</h3>
      <p>For a lighter touch, Buttons also come in outline-* variants with no background color.</p>
      <hr></hr>
-     <Button variant="outline-primary">Primary</Button>{' '}
-      <Button variant="outline-secondary">Secondary</Button>{' '}
-      <Button variant="outline-success">Success</Button>{' '}
-      <Button variant="outline-warning">Warning</Button>{' '}
-      <Button variant="outline-danger">Danger</Button>{' '}
-      <Button variant="outline-info">Info</Button>{' '}
-      <Button variant="outline-light">Light</Button>{' '}
-      <Button variant="outline-dark">Dark</Button>
+     <Button variant="outline-primary" className='mb-3'>Primary</Button>{' '}
+      <Button variant="outline-secondary" className='mb-3'>Secondary</Button>{' '}
+      <Button variant="outline-success" className='mb-3'>Success</Button>{' '}
+      <Button variant="outline-warning" className='mb-3'>Warning</Button>{' '}
+      <Button variant="outline-danger" className='mb-3'>Danger</Button>{' '}
+      <Button variant="outline-info" className='mb-3'>Info</Button>{' '}
+      <Button variant="outline-light" className='mb-3 border border-danger text-danger'>Light</Button>{' '}
+      <Button variant="outline-dark" className='mb-3'>Dark</Button>
 
       <hr></hr>
      <h3>Button tags</h3>
@@ -67,7 +67,7 @@ export default function ButtonsExample() {
          However you can render whatever you would like, adding a href prop will automatically render an <a /> element. 
          You can use the as prop to render whatever your heart desires.</p>
      <hr></hr>
-      <Button href="HomePage">Link</Button> 
+      <Button href="HomePage" className='mx-2'>Link</Button> 
       <Button type="submit">Button</Button>{' '}
       <Button as="input" type="button" value="Input" />{' '}
       <Button as="input" type="submit" value="Submit" />{' '}
@@ -80,12 +80,12 @@ export default function ButtonsExample() {
      <div className="d-grid gap-2">
         <Row className='mb-3'>
             <Col sm={6}>
-            <Button variant="primary" size="lg">
+            <Button variant="primary" size="lg" className='mb-3'>
                 Block level button
             </Button>
             </Col>
             <Col sm={6}>
-                <Button variant="secondary" size="lg">
+                <Button variant="secondary" size="lg" className='mb-3'>
                 Large button
                 </Button>
             </Col>
@@ -132,8 +132,10 @@ export default function ButtonsExample() {
      <h3>Checkbox / Radio</h3>
      <p>Buttons can also be used to style checkbox and radio form elements.</p>
      <hr></hr>
+     <Row>
+      <Col>
       <ToggleButton
-        className="mb-2"
+        className="mb-3"
         id="toggle-check"
         type="checkbox"
         variant="outline-primary"
@@ -144,7 +146,7 @@ export default function ButtonsExample() {
         Checked
       </ToggleButton>
       <br />
-      <ButtonGroup>
+      <ButtonGroup className='gap-3'>
         {radios.map((radio, idx) => (
           <ToggleButton
             key={idx}
@@ -160,6 +162,8 @@ export default function ButtonsExample() {
           </ToggleButton>
         ))}
       </ButtonGroup>
+      </Col>
+      </Row>
     </section>
     </Container>
   )

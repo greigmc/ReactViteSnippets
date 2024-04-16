@@ -9,13 +9,18 @@ import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import ServicePage from './Pages/ServicePage';
 import ContactPage from './Pages/ContactPage';
-import NavBarExamples from './Components/NavBar/NavBar';
-import CarouselsExamples from './Components/Carousels/Carousels';
-import CardsExample from './Components/Cards/Cards';
-import AccordionExample from './Components/Accordion/Accordion';
-import ButtonsExample from './Components/Buttons/Buttons';
-import GridExample from './Components/Grid/Grid';
-import Footer from './Components/Footer/Footer';
+// Bootstrap Pages
+import NavBarExamples from './Components/Bootstrap/NavBar/NavBar';
+import CarouselsExamples from './Components/Bootstrap/Carousels/Carousels';
+import CardsExample from './Components/Bootstrap/Cards/Cards';
+import AccordionExample from './Components/Bootstrap/Accordion/Accordion';
+import ButtonsExample from './Components/Bootstrap/Buttons/Buttons';
+import GridExample from './Components/Bootstrap/Grid/Grid';
+import Footer from './Footer/Footer';
+import StacksExamples from './Components/Bootstrap/Stacks/Stacks';
+import FormsExamples from './Components/Bootstrap/Forms/Forms';
+import StepperExample from './Components/Material-UI/Stepper/Stepper';
+import MultiCarouselExample from './Components/Bootstrap/Carousels/MultiCarousel.jsx';
 // import ButtonsExample from './Components/Buttons/Buttons';
 // import App from './App.jsx';
 
@@ -55,6 +60,10 @@ const router = createBrowserRouter([
         element: <CarouselsExamples />
       },
       {
+        path: "MultiCarousels",
+        element: <MultiCarouselExample />
+      },
+      {
         path: "Cards",
         element: <CardsExample />
       },
@@ -63,12 +72,24 @@ const router = createBrowserRouter([
         element: <AccordionExample />
       },
       {
+        path: "Forms",
+        element: <FormsExamples />
+      },
+      {
         path: "Buttons",
         element: <ButtonsExample />
       },
       {
+        path: "Stepper",
+        element: <StepperExample />
+      },
+      {
         path: "Grid",
         element: <GridExample />
+      },
+      {
+        path: "Stack",
+        element: <StacksExamples />
       }
     ]
   },

@@ -1,11 +1,11 @@
 import { Container, Col, Row, Button, Card, ListGroup } from "react-bootstrap";
-import imageOne from './../../assets/images/imageOne.jpg';
-import imageTwo from './../../assets/images/imageTwo.jpg';
-import imageThree from './../../assets/images/imageThree.jpg';
+import imageOne from './../../../assets/images/imageOne.jpg';
+import imageTwo from './../../../assets/images/imageTwo.jpg';
+import imageThree from './../../../assets/images/imageThree.jpg';
 
 export default function CardsExample() {
   return (
-    <Container>
+    <Container className='mt-4'>
     <section>
         <h1>Cards Examples</h1>
         <hr></hr>
@@ -146,7 +146,7 @@ export default function CardsExample() {
         <p>Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.</p>
          <Row className="my-4">
           <Col lg={4} md={4} sm={12}>
-            <Card className="bg-dark text-white">
+            <Card className="bg-dark text-white mb-3">
               <Card.Img src={imageOne} alt="Card image" />
               <Card.ImgOverlay>
                 <Card.Title>Card title</Card.Title>
@@ -159,7 +159,7 @@ export default function CardsExample() {
             </Card>
             </Col>
             <Col lg={4} md={4} sm={12}>
-            <Card className="bg-dark text-white">
+            <Card className="bg-dark text-white mb-3">
               <Card.Img src={imageTwo} alt="Card image" />
               <Card.ImgOverlay>
                 <Card.Title>Card title</Card.Title>
@@ -172,7 +172,7 @@ export default function CardsExample() {
             </Card>
            </Col>
            <Col lg={4} md={4} sm={12}>
-            <Card className="bg-dark text-white">
+            <Card className="bg-dark text-white mb-3">
               <Card.Img src={imageThree} alt="Card image" />
               <Card.ImgOverlay>
                 <Card.Title>Card title</Card.Title>

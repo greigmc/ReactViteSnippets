@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Carousel, Container, Row, Col } from 'react-bootstrap';
-import imageOne from './../../assets/images/imageOne.jpg';
-import imageTwo from './../../assets/images/imageTwo.jpg';
-import imageThree from './../../assets/images/imageThree.jpg';
+import imageOne from './../../../assets/images/imageOne.jpg';
+import imageTwo from './../../../assets/images/imageTwo.jpg';
+import imageThree from './../../../assets/images/imageThree.jpg';
 
 
 
@@ -14,7 +14,7 @@ export default function CarouselsExamples() {
     };
     
   return (
-    <Container>
+    <Container className='mt-4'> 
     <div className='container' data-bs-theme="light">
      <h1>Carousels Examples</h1>
      <hr></hr>

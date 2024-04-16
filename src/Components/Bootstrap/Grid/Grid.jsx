@@ -2,7 +2,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 export default function GridExample() {
   return (
-    <Container className=''>
+    <Container className='mt-4'>
         <section>
           <div className='my-4'>
             <h1>Grid Examples</h1>

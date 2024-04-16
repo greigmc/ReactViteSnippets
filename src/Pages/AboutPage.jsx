@@ -1,4 +1,4 @@
-import Footer from "../Components/Footer/Footer";
+import Footer from "../Footer/Footer";
 
 export default function AboutPage() {
   return (

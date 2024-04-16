@@ -8,12 +8,12 @@ import {
     Col,
     Row,
   } from 'react-bootstrap';
-  import imageOne from './../../assets/images/imageOne.jpg';
+  import imageOne from './../../../assets/images/imageOne.jpg';
 
 
 export default function NavBarExamples() {
   return (
-  <Container>
+  <Container className='mt-4'>
     <section className='container'>
     <h1>NavBar Examples</h1>
     <hr></hr>

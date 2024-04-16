@@ -38,3 +38,8 @@ img.carouselImg {
   width: 100%;
   height: 500px;
 }
+
+/* checkbox text */
+.was-validated .form-check-input:valid~.form-check-label {
+  color: #fff;
+}
