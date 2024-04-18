@@ -25,6 +25,7 @@ export default function CustomNavbar () {
                         <NavDropdown.Item href="Cards" active={Boolean(useMatch('Cards'))}>Cards</NavDropdown.Item>
                         <NavDropdown.Item href="Accordion" active={Boolean(useMatch('Accordion'))}>Accordion</NavDropdown.Item>
                         <NavDropdown.Item href="Forms" active={Boolean(useMatch('Forms'))}>Forms</NavDropdown.Item>
+                        <NavDropdown.Item href="MultiStepForms" active={Boolean(useMatch('MultiStepForms'))}>Multi Step Form</NavDropdown.Item>
                         <NavDropdown.Item href="Buttons" active={Boolean(useMatch('Buttons'))}>Buttons</NavDropdown.Item>
                         {/* <NavDropdown.Item href="Stepper" active={Boolean(useMatch('Stepper'))}>Stepper</NavDropdown.Item> */}
                         {/* <NavDropdown.Divider />

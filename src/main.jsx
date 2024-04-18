@@ -21,6 +21,7 @@ import StacksExamples from './Components/Bootstrap/Stacks/Stacks';
 import FormsExamples from './Components/Bootstrap/Forms/Forms';
 import StepperExample from './Components/Material-UI/Stepper/Stepper';
 import MultiCarouselExample from './Components/Bootstrap/Carousels/MultiCarousel.jsx';
+import MultiStepForm from './Components/Bootstrap/Forms/MultiStepForm.jsx';
 // import ButtonsExample from './Components/Buttons/Buttons';
 // import App from './App.jsx';
 
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: "Forms",
         element: <FormsExamples />
+      },
+      {
+        path: "MultiStepForms",
+        element: <MultiStepForm />
       },
       {
         path: "Buttons",

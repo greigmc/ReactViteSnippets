@@ -1,7 +1,10 @@
-import { Carousel, Card, ListGroup, Accordion, Navbar, Nav, Container, Row, Col, Button, Form } from 'react-bootstrap';
+import { Carousel, Card, ListGroup, Accordion, Navbar, Nav, Container, Row, Col, Button } from 'react-bootstrap';
 import imageOne from './../assets/images/imageOne.jpg';
 import imageTwo from './../assets/images/imageTwo.jpg';
 import imageThree from './../assets/images/imageThree.jpg';
+import MultiCarouselExample from '../Components/Bootstrap/Carousels/MultiCarousel';
+import AutoComplete from '../Components/Bootstrap/Forms/AutoComplete';
+// import MultiStepForm from '../Components/Bootstrap/Forms/MultiStepForm';
 
 
 
@@ -46,6 +49,16 @@ export default function HomePage() {
             </Col>
           </Row>
       </Container>
+
+    {/* Mulit Carousel */}
+    <Container className='my-4'>
+      <Row className="my-4">
+        <Col lg={12} md={12} sm={12}>
+      <MultiCarouselExample />
+
+        </Col>
+      </Row>
+    </Container>
 
     {/* Cards */}
     <Container className='my-4'>
@@ -188,28 +201,11 @@ export default function HomePage() {
     <Container className='my-4'>
     <h1>Form Example</h1>
         <hr></hr>
-      <Row className="my-4 text-start bg-primary text-white p-4">
+      <Row className="my-4">
         <Col lg={12} md={12} sm={12}>
-        <Form method='post' noValidate validated="true">
-                <Form.Group className="mb-3" controlId="formBasicEmail" required>
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                    {/* <Form.Text className="text-muted">
-                    Well never share your email with anyone else.
-                    </Form.Text> */}
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <Button variant="light" type="submit" href='Forms'>
-                    Submit
-                </Button>
-                </Form>
-      </Col>
+      <AutoComplete />
+
+        </Col>
       </Row>
     </Container>
 

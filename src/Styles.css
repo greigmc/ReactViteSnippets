@@ -43,3 +43,30 @@ img.carouselImg {
 .was-validated .form-check-input:valid~.form-check-label {
   color: #fff;
 }
+
+/* form validation error */
+.invalid-feedback {
+  color: #fff;
+}
+
+.was-validated .form-check-input:invalid~.form-check-label {
+  color: #fff;
+}
+
+/* Tooltip button */
+.tootip-btn {
+border-radius: 50%;
+height: 16px;
+width: 16px;
+font-size: 6px;
+background: transparent;
+color: rgb(128, 195, 66);
+}
+
+.was-validated .form-check-input:invalid~.form-check-label {
+  color: red;
+}
+
+.multi-step-feedback.invalid-feedback {
+  color: red;
+}
