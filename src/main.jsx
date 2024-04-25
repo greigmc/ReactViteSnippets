@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './Styles.css';
+import './Style.css';
 import ErrorPage from './Pages/ErrorPage';
 import CustomNavbar from './Menu/NavBar';
 import HomePage from './Pages/HomePage';
@@ -18,10 +18,16 @@ import ButtonsExample from './Components/Bootstrap/Buttons/Buttons';
 import GridExample from './Components/Bootstrap/Grid/Grid';
 import Footer from './Footer/Footer';
 import StacksExamples from './Components/Bootstrap/Stacks/Stacks';
-import FormsExamples from './Components/Bootstrap/Forms/Forms';
+import FormsExamples from './Components/Bootstrap/Forms/Form.jsx';
 import StepperExample from './Components/Material-UI/Stepper/Stepper';
 import MultiCarouselExample from './Components/Bootstrap/Carousels/MultiCarousel.jsx';
 import MultiStepForm from './Components/Bootstrap/Forms/MultiStepForm.jsx';
+// import MultiForm from './Components/Bootstrap/Forms/MultiForm.jsx';
+import MultiStepFormVal from './Components/Bootstrap/Forms/MultiStepFormVal.jsx';
+// import PropsExample from './Components/PropsExample/PropsExample.jsx';
+// import Props from './Components/Bootstrap/Grid/Props/Props.jsx';
+import TwoColGird from './Components/Bootstrap/Grid/TwoColGird.jsx';
+
 // import ButtonsExample from './Components/Buttons/Buttons';
 // import App from './App.jsx';
 
@@ -76,10 +82,14 @@ const router = createBrowserRouter([
         path: "Forms",
         element: <FormsExamples />
       },
-      {
-        path: "MultiStepForms",
-        element: <MultiStepForm />
-      },
+      // {
+      //   path: "MultiStepForm",
+      //   element: <MultiStepForm />
+      // },
+      // {
+      //   path: "MultiStep",
+      //   element: <MultiForm/>
+      // },
       {
         path: "Buttons",
         element: <ButtonsExample />
@@ -92,11 +102,29 @@ const router = createBrowserRouter([
         path: "Grid",
         element: <GridExample />
       },
+      // {
+      //   path: "Props",
+      //   element: <Props />
+
+      // },
       {
         path: "Stack",
         element: <StacksExamples />
+      },
+      {
+        path: "TwoColGrid",
+        element: <TwoColGird />
       }
     ]
+  },
+  {
+    path: "MultiStepForm",
+    element: <MultiStepForm />
+  },
+
+  {
+    path: "MultiStepFormVal",
+    element: <MultiStepFormVal />
   },
 ],
 {

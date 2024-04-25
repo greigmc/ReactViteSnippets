@@ -49,9 +49,9 @@ img.carouselImg {
   color: #fff;
 }
 
-.was-validated .form-check-input:invalid~.form-check-label {
+/* .was-validated .form-check-input:invalid~.form-check-label {
   color: #fff;
-}
+} */
 
 /* Tooltip button */
 .tootip-btn {
@@ -64,9 +64,55 @@ color: rgb(128, 195, 66);
 }
 
 .was-validated .form-check-input:invalid~.form-check-label {
-  color: red;
+  color: rgb(128, 195, 66);
+  ;
+}
+
+.was-validated .form-control:invalid {
+  border-color: rgb(128, 195, 66);
+}
+
+.was-validated .form-check-input:invalid {
+  border-color: rgb(128, 195, 66);
+}
+
+.was-validated .form-check-input:valid:checked {
+  background-color: rgb(128, 195, 66);
+}
+
+.was.validated .form-check-input:valid {
+  background-color: rgb(128, 195, 66);
+}
+
+.bg-light.text-dark.p-4.mt-2.col-lg-10.col-sm-10 {
+  box-shadow: 0 2px 10px 0 rgb(128, 195, 66);
+}
+
+.form-check-input:invalid {
+  border-color: rgb(128, 195, 66);
+
 }
 
 .multi-step-feedback.invalid-feedback {
-  color: red;
+  color: rgb(128, 195, 66);
+  ;
 }
+
+.progress-bar {
+  background-color: rgb(128, 195, 66);
+}
+
+.was-validated .form-select:invalid:focus { 
+  border-color: rgb(128, 195, 66);
+}
+
+.form-check-input:checked {
+  background-color: rgb(128, 195, 66);
+  border-color: rgb(128, 195, 66);
+}
+
+.was-validated .form-select:invalid {
+  border-color: rgb(128, 195, 66);
+}
+
+

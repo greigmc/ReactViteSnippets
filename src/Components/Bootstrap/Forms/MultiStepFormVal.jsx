@@ -78,7 +78,7 @@ export default function MultiStepFormVal() {
     const handleChange = (e) => {
       const name = e.target.name;
       const value =
-      e.target.type === "type" ? e.target.checked : e.target.value;
+      e.target.type === "checkbox" ? e.target.checked : e.target.value;
       setState({
         ...state,
         [name]: value
@@ -164,7 +164,7 @@ const [formData, setFormData] = useState({});
                     </Button>
                   </OverlayTrigger>
                   <Form.Control
-                    // required
+                    required
                     type="date"
                     name="date"
                     value={state.date}
@@ -178,7 +178,7 @@ const [formData, setFormData] = useState({});
                 </Form.Group>
                 <Row>
                 <Col lg={4} sm={12}>
-                    <Form.Group controlId="gender" className="mb-4">
+                <Form.Group controlId="gender" className="mb-4">
                       <Form.Label>Your Gender:</Form.Label>
                       <OverlayTrigger
                         placement="right"
@@ -195,7 +195,7 @@ const [formData, setFormData] = useState({});
                       {["radio"].map((type) => (
                         <div key={`inline-${type}`}>
                           <Form.Check
-                            // required
+                            required
                             inline
                             label="male"
                             name="checkGender"
@@ -205,7 +205,7 @@ const [formData, setFormData] = useState({});
                             onChange={ handleChange }
                           />
                           <Form.Check
-                            // required
+                            required
                             inline
                             label="female"
                             name="checkGender"
@@ -244,20 +244,20 @@ const [formData, setFormData] = useState({});
                           <Form.Check
                             inline
                             label="yes"
-                            name="checkSmoke"
+                            name="checkSMoke"
                             type={type}
                             id={`inline-${type}-3`}
-                            // required
+                            required
                             checked={ state.checkMe } 
                             onChange={ handleChange }
                           />
                           <Form.Check
                             inline
                             label="no"
-                            name="checkSmoke"
+                            name="checkSMoke"
                             type={type}
                             id={`inline-${type}-4`}
-                            // required
+                            required
                             checked={ state.checkMe } 
                             onChange={ handleChange }
                           />
@@ -289,7 +289,7 @@ const [formData, setFormData] = useState({});
                     // label="I am self-employed"
                     checked={ state.checkMe } 
                     onChange={ handleChange }
-                    // required
+                    required
                   />
                   <Form.Control.Feedback type="invalid" className="multi-step-feedback">
                     I am self-employed is required.
@@ -308,7 +308,7 @@ const [formData, setFormData] = useState({});
                     placement="right"
                     delay={{ show: 250, hide: 400 }}
                     overlay={renderTooltip}
-                    // required
+                    required
                   >
                     <Button
                       variant="success"
@@ -319,7 +319,7 @@ const [formData, setFormData] = useState({});
                   </OverlayTrigger>
                   <Form.Select 
                     aria-label="Default select example"
-                    // required
+                    required
                     onClick={handleSelectClick}
                     value={ value } 
                     onChange={ handleChangeDropDown }
@@ -361,7 +361,7 @@ const [formData, setFormData] = useState({});
                     </Button>
                   </OverlayTrigger>
                   <Form.Control
-                    // required
+                    required
                     name="currency-input"
                     onKeyDown={keyPressHanlder}
                     placeholder={currentcyFormat.format("")}
@@ -401,7 +401,7 @@ const [formData, setFormData] = useState({});
                     </Button>
                   </OverlayTrigger>
                   <Form.Control
-                    // required
+                    required
                     name="firstName"
                     type="text"
                     label="First Name"
@@ -432,7 +432,7 @@ const [formData, setFormData] = useState({});
                     </Button>
                   </OverlayTrigger>
                   <Form.Control
-                    // required
+                    required
                     name="lastName"
                     type="text"
                     label="Last Name"
@@ -465,7 +465,7 @@ const [formData, setFormData] = useState({});
                     </Button>
                   </OverlayTrigger>
                   <Form.Control
-                    // required
+                    required
                     name="phone"
                     type="text"
                     label="Phone"
@@ -496,7 +496,7 @@ const [formData, setFormData] = useState({});
                     </Button>
                   </OverlayTrigger>
                   <Form.Control
-                    // required
+                    required
                     name="email"
                     type="email"
                     label="Email"
@@ -529,7 +529,7 @@ const [formData, setFormData] = useState({});
                     </Button>
                   </OverlayTrigger>
                   <Form.Control
-                    // required
+                    required
                     name="postcode"
                     type="text"
                     label="Postcode"
@@ -565,7 +565,7 @@ const [formData, setFormData] = useState({});
         <Card.Text>
          Make sure you click the activation link contained in the email within the next 24 hours.
         </Card.Text>
-        <Button variant="primary" href="https://www.tal.com.au/">Home Page</Button>
+        <Button variant="primary" href="/HomePage">Home Page</Button>
       </Card.Body>
     </Card>
         </Col>
@@ -589,7 +589,7 @@ const [formData, setFormData] = useState({});
               )}
             </div>
           </Form>
-          I agree with TAL&#39;s Online Terms & Privacy Statement
+          I agree with Company&#39;s Online Terms & Privacy Statement
 
         </Col>
       </Row>

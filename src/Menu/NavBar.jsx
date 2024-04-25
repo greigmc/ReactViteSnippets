@@ -18,31 +18,34 @@ export default function CustomNavbar () {
                     <Nav.Link href="Accordion" active={Boolean(useMatch('Accordion'))}>Accordion</Nav.Link>
                     <Nav.Link href="Buttons" active={Boolean(useMatch('Buttons'))}>Buttons</Nav.Link>
                     <Nav.Link href="Grid" active={Boolean(useMatch('Grid'))}>Grid</Nav.Link> */}
-                    <NavDropdown title="Bootstap Components" id="basic-nav-dropdown" data-bs-theme="dark">
+                    <NavDropdown title="Components" id="basic-nav-dropdown" data-bs-theme="dark">
                         <NavDropdown.Item href="Carousels" active={Boolean(useMatch('Carousels'))}>Carousels</NavDropdown.Item>
                         <NavDropdown.Item href="MultiCarousels" active={Boolean(useMatch('MultiCarousels'))}>Multi Carousels</NavDropdown.Item>
                         <NavDropdown.Item href="NavBar" active={Boolean(useMatch('NavBar'))}>NavBars</NavDropdown.Item>
                         <NavDropdown.Item href="Cards" active={Boolean(useMatch('Cards'))}>Cards</NavDropdown.Item>
                         <NavDropdown.Item href="Accordion" active={Boolean(useMatch('Accordion'))}>Accordion</NavDropdown.Item>
                         <NavDropdown.Item href="Forms" active={Boolean(useMatch('Forms'))}>Forms</NavDropdown.Item>
-                        <NavDropdown.Item href="MultiStepForms" active={Boolean(useMatch('MultiStepForms'))}>Multi Step Form</NavDropdown.Item>
+                        <NavDropdown.Item href="MultiStepForm" active={Boolean(useMatch('MultiStepForm'))}>Multi Step Form</NavDropdown.Item>
+                        <NavDropdown.Item href="MultiStep" active={Boolean(useMatch('MultiForm'))}>Multi Form with Validation</NavDropdown.Item>
+                        <NavDropdown.Item href="Stepper" active={Boolean(useMatch('Stepper'))}>Stepper</NavDropdown.Item>
                         <NavDropdown.Item href="Buttons" active={Boolean(useMatch('Buttons'))}>Buttons</NavDropdown.Item>
                         {/* <NavDropdown.Item href="Stepper" active={Boolean(useMatch('Stepper'))}>Stepper</NavDropdown.Item> */}
                         {/* <NavDropdown.Divider />
                         <NavDropdown.Item href="Grid" active={Boolean(useMatch('Grid'))}>Grid</NavDropdown.Item> */}
                     </NavDropdown>
-                    <NavDropdown title=" Bootstrap Layouts" id="basic-nav-dropdown" data-bs-theme="dark">
+                    <NavDropdown title="Layouts" id="basic-nav-dropdown" data-bs-theme="dark">
                         <NavDropdown.Item href="Grid" active={Boolean(useMatch('Grid'))}>Grid</NavDropdown.Item>
+                        <NavDropdown.Item href="TwoColGrid" active={Boolean(useMatch('TwoColGrid'))}>Two Col grid</NavDropdown.Item>
                         <NavDropdown.Item href="Stack" active={Boolean(useMatch('Stack'))}>Stack</NavDropdown.Item>
                     </NavDropdown>  
                     
-                    <NavDropdown title="Material-UI Components" id="basic-nav-dropdown" data-bs-theme="dark">
+                    {/* <NavDropdown title="Material-UI Components" id="basic-nav-dropdown" data-bs-theme="dark">
                         <NavDropdown.Item href="Stepper" active={Boolean(useMatch('Stepper'))}>Stepper</NavDropdown.Item>
                     </NavDropdown>   
 
                     <NavDropdown title="Material-UI Layouts" id="basic-nav-dropdown" data-bs-theme="dark" disabled>
 
-                    </NavDropdown>                  
+                    </NavDropdown>                   */}
                     </Nav>
                 </Navbar.Collapse>
                 </Container>
