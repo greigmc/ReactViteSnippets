@@ -26,7 +26,7 @@ import MultiStepForm from './Components/Bootstrap/Forms/MultiStepForm.jsx';
 import MultiStepFormVal from './Components/Bootstrap/Forms/MultiStepFormVal.jsx';
 // import PropsExample from './Components/PropsExample/PropsExample.jsx';
 // import Props from './Components/Bootstrap/Grid/Props/Props.jsx';
-import TwoColGird from './Components/Bootstrap/Grid/TwoColGird.jsx';
+import ColGird from './Components/Bootstrap/Grid/ColGird.jsx';
 
 // import ButtonsExample from './Components/Buttons/Buttons';
 // import App from './App.jsx';
@@ -112,8 +112,8 @@ const router = createBrowserRouter([
         element: <StacksExamples />
       },
       {
-        path: "TwoColGrid",
-        element: <TwoColGird />
+        path: "ColGrid",
+        element: <ColGird />
       }
     ]
   },

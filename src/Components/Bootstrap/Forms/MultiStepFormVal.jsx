@@ -12,7 +12,7 @@ import {
   Container,
 } from "react-bootstrap";
 import './Form.css';
-import TAL from './TAL.png';
+// import TAL from './TAL.png';
 
 
 const selectOptions = [
@@ -128,12 +128,13 @@ const [formData, setFormData] = useState({});
       <hr></hr> */}
       <Row className="my-4 header"> 
       <Col lg={6} md={6} sm={6} xs={6}>
-        <a href="https://www.tal.com.au/" >
+        {/* <a href="HomePage" >
         <img src={TAL} alt="image" className='d-flex justify-content-start' />
-        </a>
+        
+        </a> */}
         </Col>
         <Col lg={6} md={6} sm={6} xs={6}>
-        <h4 className="d-flex justify-content-end">TAL Online Services</h4>
+        <h4 className="d-flex justify-content-end">Company Online Services</h4>
         </Col>
       </Row>
       <Row className="d-felx justify-content-center">
@@ -565,7 +566,7 @@ const [formData, setFormData] = useState({});
         <Card.Text>
          Make sure you click the activation link contained in the email within the next 24 hours.
         </Card.Text>
-        <Button variant="primary" href="/HomePage">Home Page</Button>
+        <Button variant="primary" href="/">Home Page</Button>
       </Card.Body>
     </Card>
         </Col>

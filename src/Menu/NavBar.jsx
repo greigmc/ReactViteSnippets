@@ -24,18 +24,19 @@ export default function CustomNavbar () {
                         <NavDropdown.Item href="NavBar" active={Boolean(useMatch('NavBar'))}>NavBars</NavDropdown.Item>
                         <NavDropdown.Item href="Cards" active={Boolean(useMatch('Cards'))}>Cards</NavDropdown.Item>
                         <NavDropdown.Item href="Accordion" active={Boolean(useMatch('Accordion'))}>Accordion</NavDropdown.Item>
-                        <NavDropdown.Item href="Forms" active={Boolean(useMatch('Forms'))}>Forms</NavDropdown.Item>
-                        <NavDropdown.Item href="MultiStepForm" active={Boolean(useMatch('MultiStepForm'))}>Multi Step Form</NavDropdown.Item>
-                        <NavDropdown.Item href="MultiStep" active={Boolean(useMatch('MultiForm'))}>Multi Form with Validation</NavDropdown.Item>
+
                         <NavDropdown.Item href="Stepper" active={Boolean(useMatch('Stepper'))}>Stepper</NavDropdown.Item>
                         <NavDropdown.Item href="Buttons" active={Boolean(useMatch('Buttons'))}>Buttons</NavDropdown.Item>
-                        {/* <NavDropdown.Item href="Stepper" active={Boolean(useMatch('Stepper'))}>Stepper</NavDropdown.Item> */}
-                        {/* <NavDropdown.Divider />
-                        <NavDropdown.Item href="Grid" active={Boolean(useMatch('Grid'))}>Grid</NavDropdown.Item> */}
+                        <NavDropdown.Divider />
+                        <NavDropdown title="Forms" id="basic-nav-dropdown" data-bs-theme="dark">
+                        <NavDropdown.Item href="Forms" active={Boolean(useMatch('Forms'))}>Form Examples</NavDropdown.Item>
+                        <NavDropdown.Item href="MultiStepForm" active={Boolean(useMatch('MultiStepForm'))}>Multi Step Form</NavDropdown.Item>
+                        <NavDropdown.Item href="MultiStepFormVal" active={Boolean(useMatch('MultiStepFormVal'))}>Multi Form with Validation</NavDropdown.Item>
+                    </NavDropdown>  
                     </NavDropdown>
                     <NavDropdown title="Layouts" id="basic-nav-dropdown" data-bs-theme="dark">
                         <NavDropdown.Item href="Grid" active={Boolean(useMatch('Grid'))}>Grid</NavDropdown.Item>
-                        <NavDropdown.Item href="TwoColGrid" active={Boolean(useMatch('TwoColGrid'))}>Two Col grid</NavDropdown.Item>
+                        <NavDropdown.Item href="ColGrid" active={Boolean(useMatch('ColGrid'))}>Content Grids</NavDropdown.Item>
                         <NavDropdown.Item href="Stack" active={Boolean(useMatch('Stack'))}>Stack</NavDropdown.Item>
                     </NavDropdown>  
                     

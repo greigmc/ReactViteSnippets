@@ -1,5 +1,5 @@
 // import react from 'react'
-import TwoColGird from '../TwoColGird'
+import TwoColGird from '../ColGird'
 // import imageCol from './../../../../assets/images/imageCol.png';
 // import imageColTwo from './../../../../assets/images/imageColTwo.png';
 

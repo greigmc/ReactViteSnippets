@@ -12,8 +12,8 @@ import AutoComplete from '../Components/Bootstrap/Forms/AutoComplete';
 export default function HomePage() {
   return (
     <section className="mt-4">
-    <h1>React-Bootstrap Components &amp; Layouts</h1>
-      <p>A component build library using Vite, React and React-Boostrap</p>
+    <h1>Components &amp; Layouts Library</h1>
+      <p>built using Vite &amp; React</p>
       <hr></hr>
     <Container fluid className='my-4'>
       <h1>Carousel Example</h1>
@@ -53,9 +53,8 @@ export default function HomePage() {
     {/* Mulit Carousel */}
     <Container className='my-4'>
       <Row className="my-4">
-        <Col lg={12} md={12} sm={12}>
-      <MultiCarouselExample />
-
+        <Col lg={12} md={12} sm={12} className='min-vh-60'>
+          <MultiCarouselExample />
         </Col>
       </Row>
     </Container>
