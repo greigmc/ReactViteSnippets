@@ -67,7 +67,7 @@ export default function ButtonsExample() {
          However you can render whatever you would like, adding a href prop will automatically render an <a /> element. 
          You can use the as prop to render whatever your heart desires.</p>
      <hr></hr>
-      <Button href="HomePage" className='mx-2'>Link</Button> 
+      <Button href="HomePage" className='m-2'>Link</Button> 
       <Button type="submit">Button</Button>{' '}
       <Button as="input" type="button" value="Input" />{' '}
       <Button as="input" type="submit" value="Submit" />{' '}

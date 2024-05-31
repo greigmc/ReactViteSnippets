@@ -41,8 +41,8 @@ export default function GridExample() {
             <hr></hr>
             <Row>
                 <Col className='border border-danger mb-2'>1 of 4</Col>
-                <Col className='border border-danger mb-2' xs={2}>3 of 4 (smaller)</Col>
-                <Col className='border border-danger mb-2' xs={2}>3 of 4 (smaller)</Col>
+                <Col className='border border-danger mb-2' xs={2}>3 of 4</Col>
+                <Col className='border border-danger mb-2' xs={2}>3 of 4</Col>
                 <Col className='border border-danger mb-2'>4 of 4</Col>
             </Row>
         </div>

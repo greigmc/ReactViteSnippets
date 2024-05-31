@@ -12,20 +12,15 @@ export default function CustomNavbar () {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                     <Nav.Link href="/components/" active={Boolean(useMatch('/components/'))}>Home</Nav.Link>
-                    {/* <Nav.Link href="Carousels" active={Boolean(useMatch('Carousels'))}>Carousels</Nav.Link>
-                    <Nav.Link href="NavBar" active={Boolean(useMatch('NavBar'))}>NavBars</Nav.Link>
-                    <Nav.Link href="Cards" active={Boolean(useMatch('Cards'))}>Cards</Nav.Link>
-                    <Nav.Link href="Accordion" active={Boolean(useMatch('Accordion'))}>Accordion</Nav.Link>
-                    <Nav.Link href="Buttons" active={Boolean(useMatch('Buttons'))}>Buttons</Nav.Link>
-                    <Nav.Link href="Grid" active={Boolean(useMatch('Grid'))}>Grid</Nav.Link> */}
                     <NavDropdown title="Components" id="basic-nav-dropdown" data-bs-theme="dark">
                         <NavDropdown.Item href="Carousels" active={Boolean(useMatch('Carousels'))}>Carousels</NavDropdown.Item>
                         <NavDropdown.Item href="MultiCarousels" active={Boolean(useMatch('MultiCarousels'))}>Multi Carousels</NavDropdown.Item>
                         <NavDropdown.Item href="NavBar" active={Boolean(useMatch('NavBar'))}>NavBars</NavDropdown.Item>
                         <NavDropdown.Item href="Cards" active={Boolean(useMatch('Cards'))}>Cards</NavDropdown.Item>
                         <NavDropdown.Item href="Accordion" active={Boolean(useMatch('Accordion'))}>Accordion</NavDropdown.Item>
+                        <NavDropdown.Item href="Api" active={Boolean(useMatch('Api'))}>API Examples</NavDropdown.Item>
 
-                        <NavDropdown.Item href="Stepper" active={Boolean(useMatch('Stepper'))}>Stepper</NavDropdown.Item>
+                        {/* <NavDropdown.Item href="Stepper" active={Boolean(useMatch('Stepper'))}>Stepper</NavDropdown.Item> */}
                         <NavDropdown.Item href="Buttons" active={Boolean(useMatch('Buttons'))}>Buttons</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown title="Forms" id="basic-nav-dropdown" data-bs-theme="dark">
@@ -38,15 +33,19 @@ export default function CustomNavbar () {
                         <NavDropdown.Item href="Grid" active={Boolean(useMatch('Grid'))}>Grid</NavDropdown.Item>
                         <NavDropdown.Item href="ColGrid" active={Boolean(useMatch('ColGrid'))}>Content Grids</NavDropdown.Item>
                         <NavDropdown.Item href="Stack" active={Boolean(useMatch('Stack'))}>Stack</NavDropdown.Item>
+                        <NavDropdown.Item href="Imageoverlay" active={Boolean(useMatch('ImageOverlay'))}>Image Overlays</NavDropdown.Item>
                     </NavDropdown>  
                     
                     {/* <NavDropdown title="Material-UI Components" id="basic-nav-dropdown" data-bs-theme="dark">
                         <NavDropdown.Item href="Stepper" active={Boolean(useMatch('Stepper'))}>Stepper</NavDropdown.Item>
-                    </NavDropdown>   
+                        <NavDropdown.Item href="CarouselMui" active={Boolean(useMatch('CarouselMui'))}>CarouselMui</NavDropdown.Item>
+                    </NavDropdown>    */}
 
-                    <NavDropdown title="Material-UI Layouts" id="basic-nav-dropdown" data-bs-theme="dark" disabled>
-
-                    </NavDropdown>                   */}
+                    <NavDropdown title="MUI Layouts" id="basic-nav-dropdown" data-bs-theme="dark">
+                    <NavDropdown.Item href="GridMui" active={Boolean(useMatch('GridMui'))}>Grid Mui</NavDropdown.Item>
+                    <NavDropdown.Item href="StackMui" active={Boolean(useMatch('StackMui'))}>Stack Mui</NavDropdown.Item>
+                    <NavDropdown.Item href="ImageList" active={Boolean(useMatch('ImageList'))}>Image List</NavDropdown.Item>
+                    </NavDropdown>                  
                     </Nav>
                 </Navbar.Collapse>
                 </Container>

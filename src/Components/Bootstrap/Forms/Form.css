@@ -6,9 +6,6 @@ body {
     color: #121212;
   }
 
-  h4 {
-    color: #80c342
-  }
 
   #root {
     display: flex;
@@ -146,7 +143,7 @@ img.carouselImg {
   display: none;
 } */
 
-.btn-primary {
+button.btn.btn-primary.multi {
   --bs-btn-color: #fff;
   --bs-btn-bg: #80c342;
   --bs-btn-border-color: #80c342;
@@ -163,7 +160,7 @@ img.carouselImg {
   --bs-btn-disabled-border-color: #0d6efd;
 }
 
-.btn-secondary{
+button.btn.btn-secondary.multi{
   --bs-btn-color: #fff;
   --bs-btn-bg: #80c342;
   --bs-btn-border-color: #80c342;

@@ -566,7 +566,7 @@ const [formData, setFormData] = useState({});
         <Card.Text>
          Make sure you click the activation link contained in the email within the next 24 hours.
         </Card.Text>
-        <Button variant="primary" href="/">Home Page</Button>
+        <Button variant="primary multi" href="/">Home Page</Button>
       </Card.Body>
     </Card>
         </Col>
@@ -580,11 +580,11 @@ const [formData, setFormData] = useState({});
                 </Button>
               )}
               {step < 3 ? (
-                <Button variant="primary" onClick={handleNext}>
+                <Button variant="primary multi" onClick={handleNext}>
                   Next
                 </Button>
               ) : (
-                <Button variant="primary" >
+                <Button variant="primary multi" >
                   Submit
                 </Button>
               )}

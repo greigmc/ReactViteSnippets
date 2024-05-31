@@ -260,7 +260,6 @@ export default function HomePage() {
           {/* <Button variant="outline-light" data-bs-theme="dark">Light</Button>{' '} */}
           <Button variant="outline-dark mb-3">Dark</Button>
       </Container>
-
     </section>
 
     
