@@ -6,14 +6,6 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(),
-    // compression({
-    //   algorithm: 'gzip',
-    //   ext: '.gz',
-    // }),
-    // compression({
-    //   algorithm: 'brotliCompress',
-    //   ext: '.br',
-    // })
   ],
   resolve: {
     alias: {
@@ -22,15 +14,11 @@ export default defineConfig({
   },
   base: '/components/',
 
-  // build: {
-  //   rollupOptions: {
-  //     output: {
-  //       manualChunks(id) {
-  //         if (id.includes('node_modules')) {
-  //           return id.toString().split('node_modules/')[1].split('/')[0].toString();
-  //         }
-  //       }
-  //     }
+  // proxy: {
+  //   '/api': {
+  //     target: 'https://ssl.geoplugin.net',
+  //     changeOrigin: true,
+  //     rewrite: (path) => path.replace(/^\/api/, '')
   //   }
   // }
 
