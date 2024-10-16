@@ -5,45 +5,48 @@ const GeoPluginFetch = () => {
   const [location, setLocation] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const geopluginAPI = 'http://www.geoplugin.net/json.gp';
+
+  const apiKey = '6fcb0cc2087b95314ee9f1ab9d35951e'; // Replace with your ipstack API key
+  const ipstackAPI = `http://api.ipstack.com/check?access_key=${apiKey}`;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(geopluginAPI);
+        const response = await fetch(ipstackAPI);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        const locationData = Array.isArray(data) ? data : [data];
-        const filteredData = locationData.map(item => {
-          // eslint-disable-next-line no-unused-vars
-          const { geoplugin_areaCode, geoplugin_dmaCode, geoplugin_euVATrate, geoplugin_credit, geoplugin_regionName, geoplugin_inEU, geoplugin_continentCode, geoplugin_locationAccuracyRadius, geoplugin_currencySymbol, geoplugin_currencySymbol_UTF8, geoplugin_currencyConverter, ...rest } = item;
-          return rest;
-        });
-        setLocation(filteredData);
+        console.log('Data keys:', Object.keys(data)); // Log the keys to ensure we have the correct names
+        setLocation([data]);
       } catch (error) {
         setError(error);
       } finally {
         setLoading(false);
       }
     };
-
     fetchData();
   }, []);
+
+  const renderValue = (value) => {
+    if (typeof value === 'object' && value !== null) {
+      return JSON.stringify(value);
+    }
+    return value;
+  };
+
+  const includeFields = ['ip', 'type', 'continent_code', 'continent_name', 'country_code', 'country_name', 'region_code', 'region_name', 'city', 'zip'];
 
   if (loading) {
     return <div>Loading...</div>;
   }
-
   if (error) {
     return <div>Error: {error.message}</div>;
   }
-
   return (
     <Container>
       <h1>Geolocation Data</h1>
-      <p>The JSON IP Geolocation API allows you to determine the geographical location of visitors based on their IP addresses. It provides detailed location data such as country, region, city, and coordinates in a structured JSON format.</p>
+      <p>The ipstack API allows you to determine the geographical location of visitors based on their IP addresses. It provides detailed location data such as country, region, city, and coordinates in a structured JSON format.</p>
       <Table responsive striped bordered hover variant="dark" className="table table-bordered mt-4 text-start">
         <thead>
           <tr>
@@ -53,12 +56,14 @@ const GeoPluginFetch = () => {
         </thead>
         <tbody>
           {location.map((item, index) => (
-            Object.entries(item).map(([key, value]) => (
-              <tr key={`${index}-${key}`}>
-                <td>{key}</td>
-                <td>{value}</td>
-              </tr>
-            ))
+            Object.entries(item)
+              .filter(([key]) => includeFields.includes(key))
+              .map(([key, value]) => (
+                <tr key={`${index}-${key}`}>
+                  <td>{key}</td>
+                  <td>{renderValue(value)}</td>
+                </tr>
+              ))
           ))}
         </tbody>
       </Table>
