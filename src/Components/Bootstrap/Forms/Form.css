@@ -1,19 +1,19 @@
 body {
-    place-items: flex-start !important;
-    height: 100%;
-    margin: 0;
-    line-height: 1.5;
-    color: #121212;
-  }
+  place-items: flex-start !important;
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  color: #121212;
+}
 
 
-  #root {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    flex-direction: column;
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 #error-page {
@@ -69,7 +69,8 @@ img.carouselImg {
   position: relative;
   top: -2px;
   margin-left: -2px;
-  }
+}
+
 .was-validated .form-check-input:invalid~.form-check-label {
   color: rgb(128, 195, 66);
   ;
@@ -78,13 +79,15 @@ img.carouselImg {
 .form-check-input:focus {
   border-color: #80c342;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(206 240 175);;
+  box-shadow: 0 0 0 0.25rem rgb(206 240 175);
+  ;
 }
 
 .form-select:focus {
   border-color: #80c342;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(206 240 175);;
+  box-shadow: 0 0 0 0.25rem rgb(206 240 175);
+  ;
 }
 
 .was-validated .form-control:invalid {
@@ -121,7 +124,7 @@ img.carouselImg {
   background-color: rgb(128, 195, 66);
 }
 
-.was-validated .form-select:invalid:focus { 
+.was-validated .form-select:invalid:focus {
   border-color: rgb(128, 195, 66);
 }
 
@@ -135,8 +138,8 @@ img.carouselImg {
 }
 
 .header {
-    border-bottom: 4px solid #80c342;
-    padding:10px;
+  border-bottom: 4px solid #80c342;
+  padding: 10px;
 }
 
 /* nav.NavBar.navbar.navbar-expand-sm.navbar-dark.bg-dark.sticky-top {
@@ -160,7 +163,7 @@ button.btn.btn-primary.multi {
   --bs-btn-disabled-border-color: #0d6efd;
 }
 
-button.btn.btn-secondary.multi{
+button.btn.btn-secondary.multi {
   --bs-btn-color: #fff;
   --bs-btn-bg: #80c342;
   --bs-btn-border-color: #80c342;
@@ -195,4 +198,3 @@ button.btn.btn-secondary.multi{
   background-color: #80c342;
   box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
-

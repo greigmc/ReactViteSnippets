@@ -1,18 +1,18 @@
 body {
-    place-items: flex-start !important;
-    height: 100%;
-    margin: 0;
-    line-height: 1.5;
-    color: #121212;
-  }
+  place-items: flex-start !important;
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  color: #121212;
+}
 
-  #root {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    flex-direction: column;
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 #error-page {
@@ -55,12 +55,12 @@ img.carouselImg {
 
 /* Tooltip button */
 .tootip-btn {
-border-radius: 50%;
-height: 16px;
-width: 16px;
-font-size: 6px;
-background: transparent;
-color: rgb(128, 195, 66);
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  font-size: 6px;
+  background: transparent;
+  color: rgb(128, 195, 66);
 }
 
 .was-validated .form-check-input:invalid~.form-check-label {
@@ -102,7 +102,7 @@ color: rgb(128, 195, 66);
   background-color: rgb(128, 195, 66);
 }
 
-.was-validated .form-select:invalid:focus { 
+.was-validated .form-select:invalid:focus {
   border-color: rgb(128, 195, 66);
 }
 
@@ -114,5 +114,3 @@ color: rgb(128, 195, 66);
 .was-validated .form-select:invalid {
   border-color: rgb(128, 195, 66);
 }
-
-

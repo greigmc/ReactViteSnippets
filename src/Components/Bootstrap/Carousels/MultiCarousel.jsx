@@ -26,7 +26,7 @@ export default function MultiCarouselExample() {
     }
   };
   return (
-    <Container className='min-vh-100 mt-4'>
+    <Container className='mt-4'>
     <section data-bs-theme="light">
      <h1> Multi Carousels Examples</h1>
      <hr></hr>

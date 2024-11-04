@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { Container, Table } from 'react-bootstrap';
-import axios from 'axios';
+import { useState, useEffect } from "react";
+import { Container, Table, Alert } from "react-bootstrap";
+import axios from "axios";
 
 export default function ApiAxiosUrl() {
   const [axiosPosts, setAxiosPosts] = useState([]);
@@ -25,18 +25,30 @@ export default function ApiAxiosUrl() {
   }, [apiAxiosUrl]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Alert variant="info">Loading...</Alert>;
   }
-
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <Alert variant="danger">Error: {error.message}</Alert>;
   }
 
   return (
-    <Container className='my-5'>
-      <h3 className='my-4'>Axios</h3>
-      <p>Axios is a popular JavaScript library for making HTTP requests, and it works great with React. Axios makes it easy to send asynchronous HTTP requests and handle responses. Here is an example of how you can use Axios to make a GET request in a React component using the useEffect hook:</p>
-      <Table responsive striped bordered hover variant="dark" className="table table-bordered mt-4 text-start">
+    <Container className="my-5">
+      <h3 className="my-4">Axios</h3>
+      <p>
+        Axios is a popular JavaScript library for making HTTP requests, and it
+        works great with React. Axios makes it easy to send asynchronous HTTP
+        requests and handle responses. Here is an example of how you can use
+        Axios to make a GET request in a React component using the useEffect
+        hook:
+      </p>
+      <Table
+        responsive
+        striped
+        bordered
+        hover
+        variant="dark"
+        className="table table-bordered mt-4 text-start"
+      >
         <thead>
           <tr>
             <th scope="col">Id</th>
@@ -48,7 +60,7 @@ export default function ApiAxiosUrl() {
           </tr>
         </thead>
         {axiosPosts.length > 0 ? (
-          axiosPosts.map(post => (
+          axiosPosts.map((post) => (
             <tbody key={post.id}>
               <tr>
                 <th scope="row">{post.id}</th>

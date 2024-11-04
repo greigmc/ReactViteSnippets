@@ -1,23 +1,25 @@
-import { useState, useEffect } from 'react';
-import { Container, Table } from 'react-bootstrap';
+import { useState, useEffect } from "react";
+import { Container, Table, Alert } from "react-bootstrap";
 
 const GeoPluginFetch = () => {
   const [location, setLocation] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const apiKey = '6fcb0cc2087b95314ee9f1ab9d35951e'; // Replace with your ipstack API key
+  const apiKey = import.meta.env.VITE_API_GEO_KEY;
   const ipstackAPI = `http://api.ipstack.com/check?access_key=${apiKey}`;
+  
+  
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(ipstackAPI);
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        console.log('Data keys:', Object.keys(data)); // Log the keys to ensure we have the correct names
+        console.log("Data keys:", Object.keys(data)); // Log the keys to ensure we have the correct names
         setLocation([data]);
       } catch (error) {
         setError(error);
@@ -29,25 +31,49 @@ const GeoPluginFetch = () => {
   }, []);
 
   const renderValue = (value) => {
-    if (typeof value === 'object' && value !== null) {
+    if (typeof value === "object" && value !== null) {
       return JSON.stringify(value);
     }
     return value;
   };
 
-  const includeFields = ['ip', 'type', 'continent_code', 'continent_name', 'country_code', 'country_name', 'region_code', 'region_name', 'city', 'zip'];
+  const includeFields = [
+    "ip",
+    "type",
+    "continent_code",
+    "continent_name",
+    "country_code",
+    "country_name",
+    "region_code",
+    "region_name",
+    "city",
+    "zip",
+  ];
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Alert variant="info">Loading...</Alert>;
   }
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <Alert variant="danger">Error: {error.message}</Alert>;
   }
+
   return (
     <Container>
       <h1>Geolocation Data</h1>
-      <p>The ipstack API allows you to determine the geographical location of visitors based on their IP addresses. It provides detailed location data such as country, region, city, and coordinates in a structured JSON format.</p>
-      <Table responsive striped bordered hover variant="dark" className="table table-bordered mt-4 text-start">
+      <p>
+        The ipstack API allows you to determine the geographical location of
+        visitors based on their IP addresses. It provides detailed location data
+        such as country, region, city, and coordinates in a structured JSON
+        format.
+      </p>
+      <Table
+        responsive
+        striped
+        bordered
+        hover
+        variant="dark"
+        className="table table-bordered mt-4 text-start"
+      >
         <thead>
           <tr>
             <th>Field</th>
@@ -55,7 +81,7 @@ const GeoPluginFetch = () => {
           </tr>
         </thead>
         <tbody>
-          {location.map((item, index) => (
+          {location.map((item, index) =>
             Object.entries(item)
               .filter(([key]) => includeFields.includes(key))
               .map(([key, value]) => (
@@ -64,7 +90,7 @@ const GeoPluginFetch = () => {
                   <td>{renderValue(value)}</td>
                 </tr>
               ))
-          ))}
+          )}
         </tbody>
       </Table>
       <hr />

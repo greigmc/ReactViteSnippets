@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Container, Table } from 'react-bootstrap';
+import { useState, useEffect } from "react";
+import { Container, Table, Alert } from "react-bootstrap";
 
 export default function ApiFetch() {
   const [posts, setPosts] = useState([]);
@@ -13,7 +13,7 @@ export default function ApiFetch() {
       try {
         const response = await fetch(apiUrl);
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         const jsonData = await response.json();
         setPosts(jsonData.data || []); // Ensure jsonData.data is an array
@@ -28,19 +28,34 @@ export default function ApiFetch() {
   }, [apiUrl]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Alert variant="info">Loading...</Alert>;
   }
-
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <Alert variant="danger">Error: {error.message}</Alert>;
   }
 
   return (
-    <Container className='my-5'>
+    <Container className="my-5">
       <h3>Fetch API</h3>
-      <p>Fetch API is a modern, promise-based API for making HTTP requests in JavaScript. It provides a simple and flexible interface for making GET, POST, PUT, and DELETE requests and handling the response from the server.</p>
-      <p>Here is an example of how you can use fetch to make a GET request to retrieve data from a server in a React component using the useEffect hook:</p>
-      <Table responsive striped bordered hover variant="dark" className="table table-bordered mt-4 text-start">
+      <p>
+        Fetch API is a modern, promise-based API for making HTTP requests in
+        JavaScript. It provides a simple and flexible interface for making GET,
+        POST, PUT, and DELETE requests and handling the response from the
+        server.
+      </p>
+      <p>
+        Here is an example of how you can use fetch to make a GET request to
+        retrieve data from a server in a React component using the useEffect
+        hook:
+      </p>
+      <Table
+        responsive
+        striped
+        bordered
+        hover
+        variant="dark"
+        className="table table-bordered mt-4 text-start"
+      >
         <thead>
           <tr>
             <th scope="col">Id</th>
@@ -51,14 +66,19 @@ export default function ApiFetch() {
           </tr>
         </thead>
         {posts.length > 0 ? (
-          posts.map(post => (
+          posts.map((post) => (
             <tbody key={post.id}>
               <tr>
                 <th scope="row">{post.id}</th>
                 <td>{post.first_name}</td>
                 <td>{post.last_name}</td>
                 <td>{post.email}</td>
-                <td><img src={post.avatar} alt={`${post.first_name} ${post.last_name}`} /></td>
+                <td>
+                  <img
+                    src={post.avatar}
+                    alt={`${post.first_name} ${post.last_name}`}
+                  />
+                </td>
               </tr>
             </tbody>
           ))
