@@ -60,6 +60,9 @@ export default function CustomNavbar() {
                 <NavDropdown.Item href="Api" active={Boolean(useMatch("Api"))}>
                   API Examples
                 </NavDropdown.Item>
+                <NavDropdown.Item href="DataModel" active={Boolean(useMatch("DataModel"))}>
+                 Data Model Examples
+                </NavDropdown.Item>
 
                 {/* <NavDropdown.Item href="Stepper" active={Boolean(useMatch('Stepper'))}>Stepper</NavDropdown.Item> */}
                 <NavDropdown.Item

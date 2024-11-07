@@ -30,6 +30,7 @@ import StackMui from "./Components/Material-UI/Stack/StackMui.jsx";
 import ImageListMui from "./Components/Material-UI/ImageList/ImageList.jsx";
 import News from "./Components/Blog/News.jsx";
 import Api from "./Components/api/api.jsx";
+import DataModeling from "./Components/DataModeling/DataModeling.jsx";
 
 const queryClient = new QueryClient();
 
@@ -58,6 +59,7 @@ const router = createBrowserRouter(
         { path: "ImageList", element: <ImageListMui /> },
         { path: "News", element: <News /> },
         { path: "Api", element: <Api /> },
+        { path: "DataModel", element: <DataModeling /> },
         { path: "MultiStepForm", element: <MultiStepForm /> },
         { path: "MultiStepFormVal", element: <MultiStepFormVal /> },
       ],
